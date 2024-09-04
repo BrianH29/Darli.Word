@@ -66,10 +66,21 @@
                                         </Button>
                                     
                                         <!-- Title -->
-                                        <Viewbox Grid.Column="1" Margin="0">
-                                            <TextBlock 
-                                                Style="{StaticResource HeaderText}"
-                                                Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Title}" />
+                                        <Viewbox Grid.Column="0" Grid.ColumnSpan="3" Margin="0">
+                                            <StackPanel>
+                                                <TextBlock 
+                                                    FontFamily="{StaticResource LatoBold}" 
+                                                    FontSize="{StaticResource FontSizeRegular}"
+                                                    Margin="0 0 0 -5">
+                                                    <Run Text="W" Foreground="{StaticResource WordOrangeBrush}" /><Run Text="O" Foreground="{StaticResource WordBlueBrush}" /><Run Text="R" Foreground="{StaticResource WordRedBrush}" /><Run Text="D" Foreground="{StaticResource WordGreenBrush}" />
+                                                </TextBlock>
+                                                <TextBlock 
+                                                    Text="its Darli" 
+                                                    FontSize="{StaticResource FontSizeSmaller}"
+                                                    Foreground="{StaticResource ForegroundDarkBrush}" 
+                                                    TextAlignment="Center"/>
+                                            </StackPanel>
+    
                                         </Viewbox>
                                         
                                         <!-- window buttons-->
@@ -91,6 +102,13 @@
 
                                     <!-- Page Content-->
                                     <Border Grid.Row="1" Padding="{Binding InnerContentPadding}">
+                                        <!--<Border.Background>
+                                            <ImageBrush 
+                                                TileMode="Tile" 
+                                                ViewboxUnits="Absolute" 
+                                                Viewport="0 0 500 500"
+                                                ImageSource="/Images/Backgrounds/emoji-background.png"/>
+                                        </Border.Background>-->
                                         <ContentPresenter Content="{TemplateBinding Content}" />
                                     </Border>
                                     
@@ -113,5 +131,6 @@
     </WindowChrome.WindowChrome>
 
     <Grid>
+        <Frame x:Name="MainFrame" Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}"/>
     </Grid>
 </Window>

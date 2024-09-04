@@ -13,6 +13,7 @@
     <None Remove="Fonts\Lato-Bold.ttf" />
     <None Remove="Fonts\Lato-Regular.ttf" />
     <None Remove="Fonts\Lato-Thin.ttf" />
+    <None Remove="Images\Backgrounds\emoji-background.png" />
     <None Remove="Images\Logo\logo-small.png" />
     <None Remove="Images\Samples\darli.jpg" />
   </ItemGroup>
@@ -25,6 +26,9 @@
     <Resource Include="Fonts\Lato-Bold.ttf" />
     <Resource Include="Fonts\Lato-Regular.ttf" />
     <Resource Include="Fonts\Lato-Thin.ttf" />
+    <Resource Include="Images\Backgrounds\emoji-background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\Logo\icon.ico" />
     <Resource Include="Images\Logo\logo-small.png" />
     <Resource Include="Images\Samples\darli.jpg" />

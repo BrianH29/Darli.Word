@@ -79,6 +79,11 @@ namespace Darli.Word
         public int TitleHeight { get; set; } = 42;
         public GridLength TitleHeightGridLength { get => new GridLength(TitleHeight + ResizeBorder); }
 
+        /// <summary>
+        /// current page of the application
+        /// </summary>
+        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Login;
+
         #endregion
 
         #region Constructor

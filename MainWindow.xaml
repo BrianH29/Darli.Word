@@ -9,7 +9,7 @@
         AllowsTransparency="True"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <StackPanel>
+        <Label Content="Hello"/> 
+    </StackPanel>
 </Window>

@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace Darli.Word.pages
+namespace Darli.Word.Pages
 {
     /// <summary>
     /// Interaction logic for LoginPage.xaml

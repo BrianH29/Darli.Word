@@ -42,7 +42,7 @@ namespace Darli.Word
         /// <summary>
         /// Resize border around the window
         /// </summary>
-        public int ResizeBorder { get; set; } = 6;
+        public int ResizeBorder => _window.WindowState == WindowState.Maximized ? 0 : 4;
 
         /// <summary>
         /// The size of the resize border around the window, taking into account the outer margin
@@ -52,7 +52,7 @@ namespace Darli.Word
         /// <summary>
         /// Page Content inner padding
         /// </summary>
-        public Thickness InnerContentPadding => new Thickness(ResizeBorder);
+        public Thickness InnerContentPadding => new Thickness(0);
 
         public int OuterMarginSize
         {
